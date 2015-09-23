@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "forgot";
+    Layout = "~/Views/Shared/_sub1Layout.cshtml";
+}
+
+<div class="clear"></div>
+<div id="main">
+    <!-- Inner Main -->
+    <div id="innermain">
+        <div class="container">
+            <div class="row">
+                <div class="breadcrumb">
+                    <div class="subtitle"><h1 class="pix-page-title">My Account</h1></div>							 								<div class="breadcrumbs"><ul><li><a href="../../">Home</a></li><li class="pix-active">My Account</li></ul></div>
+                </div>                                        	 		<div class="col-md-12">
+                    <div class="rich_editor_text pix-content-wrap">
+                        <div class="woocommerce">
+
+                            <form method="post" class="lost_reset_password">
+
+
+                                <p> Please enter your username or email address. You will receive a link to create a new password via email.</p>
+
+                                <p class="form-row form-row-first"><label for="user_login">Username or email</label> <input class="input-text" type="text" name="user_login" id="user_login" /></p>
+
+
+                                <div class="clear"></div>
+
+                                <p class="form-row">
+                                    <input type="hidden" name="wc_reset_password" value="true" />
+                                    <input type="submit" class="button" value="Reset Password" />
+                                </p>
+
+                                <input type="hidden" id="_wpnonce" name="_wpnonce" value="72a19f60bd" /><input type="hidden" name="_wp_http_referer" value="/wp-themes/soccer/my-account/lost-password/" />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Inner Main -->
+</div>
+<!-- Twitter Widget -->
+<div class='twitter_sign'></div>

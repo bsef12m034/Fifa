@@ -1,0 +1,619 @@
+﻿@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="banner">
+    <div class="flexslider">
+        <ul class="slides">
+            <li>
+                <figure>
+                    <img src="images/2.jpg" alt="">
+                </figure>
+                <figcaption>
+                    <div class="pix-desc">
+                        <h4> <time datetime="2011-01-12">From the March 7, 2015 </time></h4>
+                        <h2>
+                            <a href="../../News/news" class="pix-bgcolr">Mourinho sings Varane&#8217;s praises</a>
+                        </h2>
+                        <h3>
+                            <span class="pix-bgcolr">Despicable briefly jeepers much roughly sped ouch </span>
+                        </h3>
+                    </div>
+                </figcaption>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/3.jpg" alt="">
+                </figure>
+                <figcaption>
+                    <div class="pix-desc">
+                        <h4> <time datetime="2011-01-12">From the March 7, 2015 </time></h4>
+                        <h2>
+                            <a href="../../News/news" class="pix-bgcolr">Moyes scouts Griezmann and Pogba</a>
+                        </h2>
+                        <h3>
+                            <span class="pix-bgcolr">Despicable briefly jeepers much roughly sped ouch </span>
+                        </h3>
+                    </div>
+                </figcaption>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/4.jpg" alt="">
+                </figure>
+                <figcaption>
+                    <div class="pix-desc">
+                        <h4> <time datetime="2011-01-12">From the March 7, 2015 </time></h4>
+                        <h2>
+                            <a href="../../News/news" class="pix-bgcolr">Wenger is a &#8216;magician&#8217;, says</a>
+                        </h2>
+                        <h3>
+                            <span class="pix-bgcolr">Despicable briefly jeepers much roughly sped ouch </span>
+                        </h3>
+                    </div>
+                </figcaption>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/5.jpg" alt="">
+                </figure>
+                <figcaption>
+                    <div class="pix-desc">
+                        <h4> <time datetime="2011-01-12">From the March 7, 2015 </time></h4>
+                        <h2>
+                            <a href="../../News/news" class="pix-bgcolr">Wenger calls for FA Cup to make way</a>
+                        </h2>
+                        <h3>
+                            <span class="pix-bgcolr">Despicable briefly jeepers much roughly sped ouch </span>
+                        </h3>
+                    </div>
+                </figcaption>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/6.jpg" alt="">
+                </figure>
+                <figcaption>
+                    <div class="pix-desc">
+                        <h4> <time datetime="2011-01-12">From the March 7, 2015 </time></h4>
+                        <h2>
+                            <a href="../../News/news" class="pix-bgcolr">Macheda bemused by Moyes exclusion</a>
+                        </h2>
+                        <h3>
+                            <span class="pix-bgcolr">Despicable briefly jeepers much roughly sped ouch </span>
+                        </h3>
+                    </div>
+                </figcaption>
+            </li>
+        </ul>
+    </div>
+    <script>
+        jQuery(document).ready(function ($) {
+            BannerGallery();
+        });
+    </script>
+</div>
+
+<div class="clear"></div>
+<div id="main">
+    <div id="carouselarea">
+        <div class="container">
+            <div class="news-carousel">
+                <header class="pix-heading-title">
+                    <h2 class="pix-section-title">Latest News</h2>
+                </header>
+                <div class="center">
+                    <span class="cycle-prev" id="cycle-next"><i class="fa fa-angle-right"></i></span>
+                    <span class="cycle-next" id="cycle-prev"><i class="fa fa-angle-left"></i></span>
+                </div>
+                <div class="cycle-slideshow news-section"
+                     data-cycle-fx=carousel
+                     data-cycle-next="#cycle-next"
+                     data-cycle-prev="#cycle-prev"
+                     data-cycle-slides=">article"
+                     data-cycle-timeout=3000>
+                    <article>
+                        <figure><a href="../../News/news"><img src="images/varaneMour.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h2> <a href="../../News/news">Mourinho sings Varane&#8217;s </a></h2>
+                        </div>
+
+                    </article>
+                    <article>
+                        <figure><a href="../../News/news"><img src="images/moyes.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h2> <a href="../../News/news">Moyes scouts Griezmann and Pog</a></h2>
+                        </div>
+
+                    </article>
+                    <article>
+                        <figure><a href="../../News/news"><img src="images/wenger.jpeg" alt=""></a></figure>
+                        <div class="text">
+                            <h2> <a href="../../News/news">Wenger is a &#8216;magician&#8</a></h2>
+                        </div>
+
+                    </article>
+                    <article>
+                        <figure><a href="../../News/news"><img src="images/wenger1.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h2> <a href="../../News/news">Wenger calls for FA Cup to mak</a></h2>
+                        </div>
+
+                    </article>
+                    <article>
+                        <figure><a href="../../News/news"><img src="images/macheda.jpg" alt=""></a></figure>
+                        <div class="text">
+                            <h2> <a href="../../News/news">Macheda bemused by Moyes exclu</a></h2>
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Inner Main -->
+    <div id="innermain">
+        <div class="container">
+            <div class="row">
+                <div class="breadcrumb">
+                    <div class="subtitle"></div>
+                </div>                                        	 		<div class="col-md-12">
+                    <div class="element_size_33">
+                        <div class="pix-content-wrap">
+
+                            <div class="widget widget_countdown">
+                                <header class="pix-heading-title">
+                                    <h2 class="pix-section-title"><a href="../../Fixtures/fixtures">Next Macth ?</a></h2>
+                                </header>
+                                <div class="countdown-section">
+                                    <div class="text">
+                                        <div id="defaultCountdown"></div>
+
+                                        <script>
+
+                                            jQuery(document).ready(function ($) {
+                                                px_event_countdown('2015', '11', '22', 10, 30, 'xI6');
+
+
+
+
+
+
+
+
+                                                //30,'xI6');
+                                            });
+                                        </script>
+                                        <div class="pix-sc-team">
+                                            <ul>
+                                                <li>
+                                                    <figure>
+                                                        <img alt="" src="images/madrid.gif">
+
+                                                        <figcaption>
+                                                            Real Madrid
+                                                        </figcaption>
+                                                    </figure>
+                                                </li>
+                                                <li><span class="vs">VS</span></li>
+
+                                                <li>
+                                                    <figure>
+                                                        <img alt="" src="images/barcelona.jpg" style="height:110px;width:110px">
+
+                                                        <figcaption>
+                                                            &nbsp &nbsp &nbsp &nbsp &nbsp Barcelona
+                                                        </figcaption>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <ul class="post-options">
+                                            <li><i class="fa fa-calendar"></i><time>November 22, 2015</time></li>
+                                            <li><i class="fa fa-clock-o"></i>
+                                            <li><i class="fa fa-clock-o"></i>Kick-of 10:30</li>
+                                            </li>
+                                        </ul>
+                                        <a href="" class="btn pix-bgcolr"><i class="fa fa-map-marker"></i>Santiago Bernabeu, Real Madrid</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="element_size_33">
+                        <div class="pix-content-wrap">
+                            <header class="pix-heading-title">
+                                <h2 class="pix-section-title">Points Table</h2>
+
+                            </header>
+
+                            <div class="points-table fullwidth">
+                                <table class="table table-condensed table_D3D3D3">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                <span class="box1">
+                                                    #
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="box1">
+                                                    heading 1
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="box1">
+                                                    heading 2
+                                                </span>
+                                            </th>
+                                            <th>
+                                                <span class="box1">
+                                                    heading 3
+                                                </span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>1</td><td>Spain</td><td>10</td><td>10</td></tr>
+                                        <tr><td>2</td><td>Germany</td><td>10</td><td>10</td></tr>
+                                        <tr><td>3</td><td>Ecudor</td><td>10</td><td>10</td></tr>
+                                        <tr><td>4</td><td>Brazil</td><td>10</td><td>10</td></tr>
+                                        <tr><td>5</td><td>Russia</td><td>10</td><td>10</td></tr>
+                                        <tr><td>6</td><td>Argentina</td><td>10</td><td>10</td></tr>
+                                        <tr><td>7</td><td>Peru</td><td>10</td><td>10</td></tr>
+                                        <tr><td>8</td><td>Holland</td><td>10</td><td>10</td></tr>
+                                        <tr><td>9</td><td>England</td><td>10</td><td>10</td></tr>
+                                        <tr><td>10</td><td>Poland</td><td>10</td><td>10</td></tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td colspan="4">
+                                                <a href="../../Results/results" class="btn">
+                                                    View All
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>    		<div class="element_size_33">
+                        <div class="pix-content-wrap">
+
+                            <header class="pix-heading-title">
+                                <h2 class="pix-section-title">
+                                    Latest Fixtures
+                                </h2>
+                            </header>
+
+                            <div class="event event-listing event-listing-v2">
+
+                                <article>
+                                    <div class="text">
+                                        <div class="top-event">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../Fixtures/fixtures">Arsenal &nbsp<span>&nbsp VS &nbsp</span>&nbsp Manchester United</a>
+                                            </h2>
+                                        </div>
+                                        <span class="match-category cat-neutral">n</span>
+
+                                        <ul class="post-options">
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                November 22, 2015
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o"></i>
+                                                10:30
+                                            </li>
+                                            <li><i class="fa fa-map-marker"></i>Stadium name</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <article>
+                                    <div class="text">
+                                        <div class="top-event">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../Fixtures/fixtures">Juventus &nbsp<span>&nbsp VS &nbsp</span>&nbsp Dortmund</a>
+                                            </h2>
+                                        </div>
+                                        <span class="match-category cat-neutral">n</span>
+
+                                        <ul class="post-options">
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                August 5, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o"></i>
+                                                12:00
+                                            </li>
+                                            <li><i class="fa fa-map-marker"></i> Cumbria, UK</li>
+                                        </ul>
+                                    </div>
+                                </article>
+
+                                <article>
+                                    <div class="text">
+                                        <div class="top-event">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../Fixtures/fixtures">Chelsea &nbsp<span> &nbsp VS &nbsp</span> &nbsp Inter Milan</a>
+                                            </h2>
+                                        </div>
+                                        <span class="match-category cat-home">h</span>
+
+                                        <ul class="post-options">
+                                            <li>
+                                                <i class="fa fa-calendar"></i>
+                                                October 26, 2016
+                                            </li>
+                                            <li>
+                                                <i class="fa fa-clock-o"></i>
+                                                12:00
+                                            </li>
+                                            <li><i class="fa fa-map-marker"></i>Dartford, Greenhithe, newland</li>
+                                        </ul>
+                                    </div>
+                                </article>
+                                <a href="../../Fixtures/fixtures" class="btn btn-viewall pix-bgcolrhvr"><i class="fa fa-calendar"></i>View All</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="element_size_100">
+
+                        <div class="pix-content-wrap">
+                            <div class="pix-blog blog-carousel blog-grid">
+
+                                <!-- Blog Start -->
+                                <header class="pix-heading-title">
+                                    <h2 class="pix-heading-color pix-section-title">FIFA WORLD LEAGUE INTERNAL NEWS</h2>
+                                    <div class="carousel-default-button">
+                                        <span class="cycle-prev btn pix-bgcolrhvr" id="cycle-prev-2"> <i class="fa fa-long-arrow-left"></i></span>
+                                        <span class="cycle-next btn pix-bgcolrhvr" id="cycle-next-2"> <i class="fa fa-long-arrow-right"></i></span>
+                                    </div>
+                                </header>
+                                <div class="cycle-slideshow fullwidth"
+                                     data-cycle-fx=carousel
+                                     data-cycle-next="#cycle-next-2"
+                                     data-cycle-prev="#cycle-prev-2"
+                                     data-cycle-slides=">article"
+                                     data-cycle-timeout=3000>
+                                    <!-- Blog Post Start -->
+                                    <article class="post-122 post type-post status-publish format-standard has-post-thumbnail hentry category-boxing category-football category-premier-league tag-golf tag-kick tag-player tag-sports">
+                                        <figure><a href="../../News/news"><img src="images/moyes.jpg" alt=""></a></figure>
+                                        <div class="text">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../News/news" class="pix-colrhvr">
+                                                    Moyes scouts Griezmann and Pogba
+                                                </a>
+                                            </h2>
+                                            <p>Despicable briefly jeepers much roughly sped ouch in one away supportive grateful porcupine much less darn naughtily lik</p>                                        <div class="blog-bottom">
+                                                <ul class="post-options">
+                                                    <li>
+                                                        <i class="fa fa-calendar"></i>                    <time datetime="07-03-14">March 7, 2014</time>
+                                                    </li>
+                                                    <li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="post-123 post type-post status-publish format-standard has-post-thumbnail hentry category-boxing category-football category-golf tag-player tag-sports tag-stadium">
+                                        <figure><a href="../../News/news"><img src="images/macheda.jpg" alt="" style="height:170px"></a></figure>
+                                        <div class="text">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../News/news" class="pix-colrhvr">
+                                                    Macheda bemused by Moyes exclusion
+                                                </a>
+                                            </h2>
+                                            <p>Despicable briefly jeepers much roughly sped ouch in one away supportive grateful porcupine much less darn naughtily lik</p>                                        <div class="blog-bottom">
+                                                <ul class="post-options">
+                                                    <li>
+                                                        <i class="fa fa-calendar"></i>                    <time datetime="07-03-14">March 7, 2014</time>
+                                                    </li>
+                                                    <li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="post-121 post type-post status-publish format-standard has-post-thumbnail hentry category-boxing category-football category-tennis tag-golf tag-kick tag-player tag-sports tag-stadium">
+                                        <figure><a href="../../News/news"><img src="images/wenger.jpeg" alt="" style="height:170px"></a></figure>
+                                        <div class="text">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../News/news" class="pix-colrhvr">
+                                                    Soldado reveals his Tottenham torment
+                                                </a>
+                                            </h2>
+                                            <p>Despicable briefly jeepers much roughly sped ouch in one away supportive grateful porcupine much less darn naughtily lik</p>                                        <div class="blog-bottom">
+                                                <ul class="post-options">
+                                                    <li>
+                                                        <i class="fa fa-calendar"></i>                    <time datetime="07-03-14">March 7, 2014</time>
+                                                    </li>
+                                                    <li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <article class="post-124 post type-post status-publish format-standard has-post-thumbnail hentry category-boxing category-cycling category-football tag-golf tag-player tag-stadium">
+                                        <figure><a href="../../News/news"><img src="images/wenger1.jpg" alt="" style="height:170px"></a></figure>
+                                        <div class="text">
+                                            <h2 class="pix-post-title">
+                                                <a href="../../News/news" class="pix-colrhvr">
+                                                    Bendtner aims to leave mark at Arsenal
+                                                </a>
+                                            </h2>
+                                            <p>Despicable briefly jeepers much roughly sped ouch in one away supportive grateful porcupine much less darn naughtily lik</p>                                        <div class="blog-bottom">
+                                                <ul class="post-options">
+                                                    <li>
+                                                        <i class="fa fa-calendar"></i>                    <time datetime="07-03-14">March 7, 2014</time>
+                                                    </li>
+                                                    <li>
+                                                    <li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <!-- Blog Post End -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>   	<div class="element_size_100">
+
+                        <div class="pix-content-wrap">
+
+                            <header class="pix-heading-title">
+                                <h2 class="pix-section-title">Admin And Staff</h2>                            <div class="carousel-default-button">
+                                    <span class="cycle-prev btn pix-bgcolrhvr" id="cycle-prev-5"> <i class="fa fa-long-arrow-left"></i></span>
+                                    <span class="cycle-next btn pix-bgcolrhvr" id="cycle-next-5"> <i class="fa fa-long-arrow-right"></i></span>
+                                </div>
+                            </header>
+
+                            <div class="our-team-sec our-team-carousel">
+                                <div class="cycle-slideshow"
+                                     data-cycle-fx=carousel
+                                     data-cycle-next="#cycle-next-5"
+                                     data-cycle-prev="#cycle-prev-5"
+                                     data-cycle-slides=">article"
+                                     data-cycle-timeout=3000>
+                                    <article class="post-188 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-rochdale team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Fernando Velasco</a></h2>
+                                                <h6><a>Sweeper</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-191 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Levi Brown</a></h2>
+                                                <h6><a>Forward</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-190 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-soccer-club team-category-st-johnstone">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Colt McCoy</a></h2>
+                                                <h6><a>Attacking midfielder</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-189 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-rochdale team-category-soccer-club team-category-st-johnstone">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Ndamukong Suh</a></h2>
+                                                <h6><a>Forward</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-193 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-park-rangers team-category-rochdale team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">A.J. Hawk</a></h2>
+                                                <h6><a>Right Back Attacking Defender</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-192 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-metropiliten-club team-category-raith-rovers team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Arrelious Benn</a></h2>
+                                                <h6><a>Striker</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-194 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-manchester-united team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Roman Harper</a></h2>
+                                                <h6><a>Right Winger Forward</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-195 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-park-rangers team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Michael Hoomanawanui</a></h2>
+                                                <h6><a>Striker</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-196 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-raith-rovers team-category-rochdale team-category-soccer-club team-category-st-johnstone">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Rocky Bernard</a></h2>
+                                                <h6><a>MidFielder</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-197 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-raith-rovers team-category-rochdale team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">D&#8217;Brickashaw Ferguson</a></h2>
+                                                <h6><a>Forward</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-198 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-metropiliten-club team-category-park-rangers team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Guy Whimper</a></h2>
+                                                <h6><a>Defender</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-344 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-manchester-united team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">John Radr</a></h2>
+                                                <h6><a>Striker</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                    <article class="post-345 player type-player status-publish has-post-thumbnail hentry team-category-arsenal-club team-category-city-club team-category-king-rob-club team-category-soccer-club">
+                                        <figure>
+                                            <a href="#"><img src="images/ryan.jpg" alt=""></a>                                                 <figcaption>
+                                                <h2 class="pix-post-title"><a href="#">Bernard Smith</a></h2>
+                                                <h6><a>Striker</a></h6>
+                                            </figcaption>
+                                        </figure>
+                                    </article>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Inner Main -->
+    </div>
+    <!-- Twitter Widget -->
+    <div class='twitter_sign'></div>

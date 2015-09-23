@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "contact";
+    Layout = "~/Views/Shared/_subLayout.cshtml";
+}
+
+<div class="breadcrumb">
+    <div class="subtitle"><h1 class="pix-page-title">Contact</h1></div>							 								<div class="breadcrumbs"><ul><li><a href="../../">Home</a></li><li class="pix-active">Contact</li></ul></div>
+</div>                                        	 		<div class="col-md-9">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script><div class="element_size_100 px-map"><div class="pix-content-wrap"><div class="contact-us rich_editor_text"><div class="map-sec"><div class="mapcode iframe mapsection gmapwrapp" id="map_canvas1" style="height:360px;"> </div></div><p></p></div></div></div>
+    <script type='text/javascript'>
+        function initialize() {
+            var styles = [
+                {
+                    stylers: [
+                      { hue: '#000000' },
+                      { saturation: -100 }
+                    ]
+                }, {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [
+                      { lightness: -40 },
+                      { visibility: 'simplified' }
+                    ]
+                }, {
+                    featureType: 'road',
+                    elementType: 'labels',
+                    stylers: [
+                      { visibility: 'on' }
+                    ]
+                }
+            ];
+            var styledMap = new google.maps.StyledMapType(styles,
+            { name: 'Styled Map' });
+            var myLatlng = new google.maps.LatLng(54.2503595, -1.4708553);
+            var mapOptions = {
+                zoom: 16,
+                panControl: false,
+                scrollwheel: false,
+                draggable: false,
+                center: myLatlng,
+                disableDefaultUI: true,
+                disableDefaultUI: false,
+                mapTypeControlOptions: {
+                    mapTypeIds: [google.maps.MapTypeId.ROADMAP.ROADMAP, 'map_style']
+                }
+            }
+            var map = new google.maps.Map(document.getElementById('map_canvas1'), mapOptions);
+            map.mapTypes.set('map_style', styledMap);
+            map.setMapTypeId('map_style');
+            var infowindow = new google.maps.InfoWindow({
+                content: 'North Yorkshire United Kingdom',
+                maxWidth: 200,
+                maxHeight: 100,
+            });
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: '',
+                icon: '',
+                shadow: ''
+            });
+
+            //google.maps.event.addListener(marker, 'click', function() {
+
+            if (infowindow.content != '') {
+                infowindow.open(map, marker);
+                map.panBy(1, -60);
+                google.maps.event.addListener(marker, 'click', function (event) {
+                    infowindow.open(map, marker);
+
+                });
+            }
+            //});
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script><div class="element_size_100 column">
+        <h4>Monday to Friday (except Bank Holidays) 09.30 to 17.00.</h4>
+        A matchday service is provided for all Home fixtures when the switchboard is open from 09.30am until 20 minutes after the end of the game. Please call the above number for all matchday issues.<br><br>
+    </div>
+    <script type="text/javascript">
+
+
+    </script>
+
+
+    <div class="element_size_100">
+        <div class="pix-content-wrap">
+            <div class="inputforms respond">
+
+                <div class="textsection">
+                    <div class="succ_mess" id="succ_mess3" style="display:none;"></div>
+                </div>
+                <div id="form_hide3">
+                    <div class="inquiry" id="respond">
+                        <form id="frm3" name="frm3" method="post" action="#" novalidate>
+
+                            <p class="comment-form-author">
+                                <label class="form-icons">
+                                    <small class="fa fa-ellipsis-v"></small>
+                                    <i class="fa fa-user"></i>
+
+                                </label>
+                                <input type="text" name="contact_name" id="contact_name" class="nameinput {validate:{required:true}}" value="Name" />
+                                <span>(required)</span>
+                            </p>
+
+                            <p class="comment-form-email">
+                                <label class="form-icons">
+                                    <small class="fa fa-ellipsis-v"></small>
+                                    <i class="fa fa-envelope"></i>
+                                </label>
+                                <input type="text" name="contact_email" id="contact_email" class="emailinput {validate:{required:true ,email:true}}" value="Email" />
+                                <span>(required)</span>
+                            </p>
+                            <p class="comment-form-contact">
+                                <label class="form-icons">
+                                    <small class="fa fa-ellipsis-v"></small>
+                                    <i class="fa fa-phone"></i>
+                                </label>
+                                <input type="text" name="subject" id="subject" class="subjectinput {validate:{required:true}}" value="Subject" />
+                            </p>
+                            <p class="comment-form-comment">
+                                <textarea name="contact_msg" id="contact_msg" class="{validate:{required:true}}"></textarea>
+                            </p>
+                            <p class="form-submit">
+                                <input type="hidden" value="Email Sent Successfully.
+Thank you, your message has been submitted to us." name="px_contact_succ_msg">
+                                <input type="hidden" name="bloginfo" value="Soccer Club" />
+                                <input type="hidden" name="counter_node" value="3" />
+                                <input type="submit" value="Submit" id="submit_btn3" class="backcolr">
+                                <span>*Your Email will never published.</span>
+                            </p>
+                            <div id="loading_div3"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
