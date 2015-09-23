@@ -14,12 +14,7 @@ Tags: dark, black, gray, one-column, two-columns, left-sidebar, right-sidebar, f
 @charset"utf-8";
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-@import url(bootstrap.css);
-@import url(flexslider.css);
-@import url(widget.css);
-@import url(font-awesome.css);
-@import url(color.css);
-@import url(shop.css);
+
 * {
     padding: 0px;
     margin: 0px;
